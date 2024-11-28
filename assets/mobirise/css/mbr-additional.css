@@ -4262,7 +4262,6 @@ a {
 }
 .cid-tSA6tGqVll {
   padding-top: 10rem;
-  padding-bottom: 5rem;
   background-color: #ffffff;
 }
 .cid-tSA6tGqVll .mbr-fallback-image.disabled {
@@ -4297,20 +4296,10 @@ a {
 .cid-tSA6vSzXjy ul {
   list-style: none;
   margin: 0;
-  padding-left: 2.5rem;
 }
 .cid-tSA6vSzXjy li {
   position: relative;
   margin-bottom: 1rem;
-}
-.cid-tSA6vSzXjy ul li::before {
-  position: absolute;
-  left: -1.6rem;
-  content: "\2022";
-  color: #6592e6;
-  font-weight: bold;
-  font-size: 2rem;
-  width: 1.6rem;
 }
 .cid-tSyowX4YkG {
   padding-top: 6rem;
