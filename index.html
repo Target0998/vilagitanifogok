@@ -28,7 +28,7 @@ Célunk, hogy áthidaljuk a távolságot a leszakadó rétegek és a jóléti t�
   <link rel="preload" href="https://fonts.googleapis.com/css?family=Kalam:300,400,700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kalam:300,400,700&display=swap"></noscript>
   <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
-  <link rel="stylesheet" href="own-style.css?v=2.0">
+  <link rel="stylesheet" href="own-style.css?v=2.2">
   
   
   
@@ -71,7 +71,11 @@ Célunk, hogy áthidaljuk a távolságot a leszakadó rétegek és a jóléti t�
 				</div>
 			</button>
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true"><li class="nav-item">
+				<ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true">
+					<li class="nav-item">
+						<a class="nav-link link display-4 hm-nav-link" href="#" onclick="openHelyzetunk(); return false;">&#9888; Közlemény</a>
+					</li>
+					<li class="nav-item">
 						<a class="nav-link link text-black text-primary display-4" href="rolunk.html">Rólunk</a>
 					</li>
 					<li class="nav-item">
@@ -79,7 +83,9 @@ Célunk, hogy áthidaljuk a távolságot a leszakadó rétegek és a jóléti t�
 					</li>
 					<li class="nav-item">
 						<a class="nav-link link text-black text-primary display-4" href="index.html#features09-16">Hogyan segíthetsz?</a>
-					</li><li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="index.html#contacts02-17">Kapcsolat</a></li></ul>
+					</li>
+					<li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="index.html#contacts02-17">Kapcsolat</a></li>
+				</ul>
 				<div class="icons-menu">
 					<a class="iconfont-wrapper" href="https://maps.app.goo.gl/AGnAqncQd4NSMbxFA" target="_blank">
 						<span class="p-2 mbr-iconfont mobi-mbri-map-pin mobi-mbri"></span>
@@ -377,9 +383,98 @@ Célunk, hogy áthidaljuk a távolságot a leszakadó rétegek és a jóléti t�
         </div>
     </div>
 </section>
-<script type="text/plain" data-src="assets/bootstrap/js/bootstrap.bundle.min.js"></script><script src="assets/web/assets/cookies-alert-plugin/cookies-alert-core.js"></script><script src="assets/web/assets/cookies-alert-plugin/cookies-alert-script.js"></script><script type="text/plain" data-src="assets/smoothscroll/smooth-scroll.js"></script><script type="text/plain" data-src="assets/ytplayer/index.js"></script><script type="text/plain" data-src="assets/dropdown/js/navbar-dropdown.js"></script><script type="text/plain" data-src="assets/theme/js/script.js"></script>
+<script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/smoothscroll/smooth-scroll.js"></script>
+<script src="assets/dropdown/js/navbar-dropdown.js"></script>
+<script src="assets/theme/js/script.js"></script>
+<script src="assets/web/assets/cookies-alert-plugin/cookies-alert-core.js"></script>
+<script src="assets/web/assets/cookies-alert-plugin/cookies-alert-script.js"></script>
+<script type="text/plain" data-src="assets/ytplayer/index.js"></script>
   
   
+<!-- Helyzetünk modal -->
+<div id="helyzetunkModal" class="hm-overlay" role="dialog" aria-modal="true" aria-labelledby="hm-title">
+  <div class="hm-dialog">
+    <button class="hm-close" onclick="closeHelyzetunk()" aria-label="Bezár">&times;</button>
+
+    <div class="hm-header">
+      <h2 id="hm-title" class="mbr-fonts-style display-2"><strong>Közlemény – Világíthatunk?</strong></h2>
+    </div>
+
+    <div class="hm-body">
+      <!-- Image + intro -->
+      <div class="hm-top">
+        <div class="hm-img-col">
+          <img src="helyzetunk.png" alt="Helyzetünk közlemény" class="hm-img">
+        </div>
+        <div class="hm-intro-col">
+          <p class="mbr-fonts-style display-7 hm-lead"><strong>Rossz hírünk van: a megmaradásunkért küzdünk, hogy tovább támogathassuk a kerecsendi családokat.</strong></p>
+          <p class="mbr-fonts-style display-7">Az állami programok szerződés szerinti forrásai már hosszú hónapok óta késnek. A hiányt sokáig saját forrásból igyekeztünk áthidalni, ez azonban már nem fenntartható: változás nélkül a feladatainkat nem tudjuk tovább ellátni.</p>
+          <div class="hm-cta">
+            <p class="mbr-fonts-style display-7 mb-1"><strong>Számlaszám:</strong> 11711096-21456499</p>
+            <p class="mbr-fonts-style display-7 mb-3"><strong>Közlemény:</strong> világíthatunk? támogatás</p>
+            <a class="btn btn-danger display-7" href="https://adjukossze.hu/adomanygyujtes/vilagits-te-is-kerecsenden-3258/tamogatom" target="_blank">Bankkártyás adomány</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Full statement -->
+      <div class="hm-full-text mbr-fonts-style display-7">
+        <p><strong>Munkánkat több évtizede végezzük Kerecsenden</strong>, kezdetben lazábban szervezett csapatként, majd a civil szerveződésből közhasznú egyesületté válva. 2020-tól pedig a Belügyminisztérium és a Magyar Máltai Szeretetszolgálat által közvetített Felzárkózó Települések Program (FeTe) helyi megvalósítójaként dolgozunk.</p>
+        <p>Hitvallásunk szerint célunk a Kerecsenden nagy számban élő nehéz sorsú, magukra maradt emberek, különösen a gyerekek életesélyeinek növelése, közösségteremtés és a tágabb társadalom felelősségvállalásának erősítése – azért, hogy mindannyian aktív, egyenrangú, alkotó és szabad tagjaivá válhassunk a társadalomnak.</p>
+        <p>Munkatársaink alapos kiválasztási folyamat eredményeként dolgoznak velünk. Többen közül a mi támogatásunkkal szereztek megfelelő végzettséget, szerteágazó szociális munkát végeznek. A gyermekek fejlődését már magzati kortól követjük: a helyi roma közösségből származó családmentorok figyelnek az édesanyák és gyermekeik egészségére, fejlődésére. Áldozatos, védőnőket támogató munkájuknak köszönhetően számos csecsemő hazagondozását sikerült megoldani, és reménytelen családi körülmények közé születő babák is családba kerülhettek nyílt örökbeadás támogatásával, ahelyett, hogy a kórházban maradtak volna. Az óvodás- és iskoláskorúakat pszichológus és fejlesztőpedagógus segíti. A felnőtt családtagokat adósságtanácsadással, munkaerőpiaci mentorálással, egészségügyi szűrésekkel, lakhatási és kertprogrammal, szükség esetén drogprevencióval támogatjuk önálló életvezetésük kialakításában. A falu egész közösségét köztisztasági programmal segítjük élhetőbb élettérhez, szabadidős programjaink, nyári napközink és táboraink pedig lassan a település minden korosztályát elérik.</p>
+        <p><strong>Egyesületünk munkája sajnos nem kis részben a hiányzó vagy elégtelen állami szolgáltatások pótlását, kiegészítését jelenti.</strong></p>
+        <p>Munkánk néhány év alatt komplex rendszerré épült; a hiányok betöltésére saját elemekkel bővítettük, és több olyan korábbi FeTe-programelem finanszírozását is átvállaltuk, amelyet a program már nem tudott tovább finanszírozni. Hisszük és tapasztaljuk, hogy minden szociális támogatás és fejlesztő tevékenység alapja a hosszú távú kiszámíthatóság.</p>
+        <p>A FeTe forrásai, amik a megvalósító szervezetekhez jutottak, eleve szűkösek voltak a problémák nagyságához képest, ráadásul a program finanszírozása a kezdeti, tisztán hazai forrásokról később uniós alapokra terelődött át. Ez komoly likviditási kockázatokat és szakmai nehézségeket eredményezett. Az eredeti támogatási összeg 2020 óta nem változott, miközben jelentősen emelkedett a minimálbér, a rezsi, a programok eszközeinek és az élelmiszereknek az ára. Mára a kezdeti támogatás a bérek kifizetésére is kevés.</p>
+        <p>Ezért plusz forrásokat kellett keresnünk. Ez nagy kihívás volt egy olyan környezetben, ahol a civil szervezetek finanszírozási lehetőségei és működési keretei egyre szűkebb, főként állami keretek közé szorultak, miközben a független, kritikus vagy külföldi donorokra támaszkodó szervezetek súlyos adminisztratív és politikai korlátozásokkal szembesültek. Ezért – hogy ne kerüljünk „fekete listára" és így tovább segíthessük támogatottjainkat – sok más civil szervezethez hasonlóan főként az állami szférából érkező forrásokat kellett felkutatnunk és megpályáznunk.</p>
+        <p>A fejlesztő programok működtetését rendszeres gyűjtéseink mellett a TOP Plusz program és a Nemzeti Bűnmegelőzési Tanáccsal való együttműködés tette lehetővé; a TOP Pluszban a Kerecsendi Önkormányzat konzorciumi partnereként veszünk részt, az NBT egyedi támogatásai pedig számos, gyermekek javára megvalósuló programot és fejlesztést támogattak.</p>
+        <p>A TOP Plusz program utófinanszírozású. Bár a szerződés szerint még nem járt le a folyósítási határidő, a helyzet azért vált tarthatatlanná, mert a FeTe Programmal egy időben, három hónapja ezt a forrást is előfinanszíroznunk kell.</p>
+        <p>A Nemzeti Bűnmegelőzési Tanács átalakításával egy már befogadott egyedi kérelemben szereplő, 10 millió forintos fejlesztési támogatás sorsa is bizonytalanná vált. Emiatt szeptembertől nem tudjuk folytatni gyógypedagógusunk és főállású munkaerőpiaci mentorunk munkáját – utóbbi szolgáltatás a FeTe keretei között is megszűnt –, nem tudjuk folytatni a hátrányos helyzetű gyermekek környezetvédelmi és köztisztasági csoportfoglalkozásait, és nem valósulhat meg munkatársaink Alapozó terápiás és KRISZKÁD képzése sem.</p>
+        <p>Közép- és hosszú távú stratégiai célunk éppen ezért az Egyesület anyagi függetlenedése: szeretnénk, ha működésünk nem lenne kiszolgáltatva egy-egy támogatási rendszer változásainak és a finanszírozások csúszásának.</p>
+        <p>Most azonban kritikus helyzetbe kerültünk. A Felzárkózó Települések Programot mintegy 9,1 millió, a TOP Plusz-t pedig mintegy 3,7 millió forinttal, saját forrásunkból előfinanszíroztuk. <strong>Mostanra minden saját tartalékunkat felhasználtuk.</strong></p>
+        <p>Ezek a tartalékok ráadásul nem felesleges pénzek: amellett, hogy ezek képeznek likviditási tartalékot az utófinanszírozásos pályázatokhoz, ebből fedezzük a Jelenlét Pont rezsiköltségeit, tartjuk fenn az egyetlen szolgálati autónkat, ebből tudjuk a krízisalapunkat kiegészíteni (amelyből azonnali segítséget tudunk nyújtani a családoknak – és előttünk a tél, amikor a krízisszám ugrásszerűen megnövekszik). Ebből a tartalékból finanszírozzuk a szabadidős foglalkozások jelentős részét, ebből kell szervezetünket fejlesztenünk és a belső képzéseinket biztosítanunk.</p>
+        <p><strong>A likviditási probléma lehetetlen döntés elé állít minket.</strong> Ha folytatjuk a munkát anélkül, hogy biztosan tudnánk fizetni a kollégákat, annak a Btk. 373. §-a alapján akár rosszhiszemű foglalkoztatásként, csalásként való minősítés is lehet a következménye. Ha viszont leállunk, a pályázatokban vállalt feladatok elmulasztásával szegünk szerződést. Bármelyik utat választjuk, az Egyesület és munkatársaink kerülnek veszélybe – önhibánkon kívül.</p>
+        <p>A helyzet rendezése érdekében a Szociális és Családügyi Minisztériumot és országgyűlési képviselőnket is megkerestük – válaszukra várunk. Közben mindent megteszünk, hogy csökkentsük a kiadásokat: néhány kisebb, nem pótolhatatlan programelemet ideiglenesen felfüggesztettünk, és munkatársaink, bár félve néznek a következő időszak elé, rendületlenül dolgoznak, sokszor saját, szerény fizetésükből vásárolva élelmet, hozzávalókat a gyerekprogramokhoz.</p>
+        <p><strong>Mi válik semmivé, ha a helyzet nem rendeződik?</strong><br>
+        Havonta átlagosan 300 ügyfél fordul hozzánk segítségért. Adósságkezelésben eddig 150 család kért támogatást. Munkaerőpiaci mentorunk több mint 200 ügyféllel foglalkozott, és több képzést is megszervezett. Jelenleg munkatársaink 10 várandóst és több mint 60, 0–3 éves kisgyermeket és családját kísérik. Programjaink és fejlesztéseink összességében mintegy 170 gyermeket érintenek. Éjszakai Klubunkat 20-30 fiatal látogatja, kertprogramunkban 45 család vesz részt, az idős korosztályt segítő alkalmakon 10-30 fővel dolgozunk.</p>
+        <p><em>A Világítani Fogok Egyesület vezetősége</em></p>
+      </div>
+
+      <!-- Bottom CTA -->
+      <div class="hm-cta hm-cta-bottom">
+        <h5 class="mbr-fonts-style display-5 mb-3"><strong>Köszönjük, hogy mellénk állsz!</strong></h5>
+        <p class="mbr-fonts-style display-7 mb-1"><strong>Számlaszám:</strong> 11711096-21456499</p>
+        <p class="mbr-fonts-style display-7 mb-3"><strong>Közlemény:</strong> világíthatunk? támogatás</p>
+        <a class="btn btn-danger display-7 me-2" href="https://adjukossze.hu/adomanygyujtes/vilagits-te-is-kerecsenden-3258/tamogatom" target="_blank">Bankkártyás adomány</a>
+        <button class="btn btn-outline-secondary display-7" onclick="closeHelyzetunk()">Bezár</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  function openHelyzetunk() {
+    var m = document.getElementById('helyzetunkModal');
+    m.classList.add('hm-open');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeHelyzetunk() {
+    var m = document.getElementById('helyzetunkModal');
+    m.classList.remove('hm-open');
+    document.body.style.overflow = '';
+    localStorage.setItem('helyzetunk_seen', '1');
+  }
+  document.getElementById('helyzetunkModal').addEventListener('click', function(e) {
+    if (e.target === this) closeHelyzetunk();
+  });
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') closeHelyzetunk();
+  });
+  if (!localStorage.getItem('helyzetunk_seen')) {
+    openHelyzetunk();
+  }
+</script>
+
 <input name="cookieData" type="hidden" data-cookie-cookiesAlertType='2' data-cookie-customDialogSelector='null' data-cookie-colorText='#424a4d' data-cookie-colorBg='rgb(255, 255, 255)' data-cookie-opacityOverlay='0' data-cookie-bgOpacity='100' data-cookie-textButton='Elfogad' data-cookie-rejectText='Elutasít' data-cookie-colorButton='#e9582f' data-cookie-rejectColor='#ffffff' data-cookie-colorLink='#424a4d' data-cookie-underlineLink='true' data-cookie-text="Oldalunkon sütiket használunk a felhasználói élmény javítása érdekében, melyről <a href='VF_adatvedelmi_v2.pdf'>itt</a> olvashatsz többet. A sütik elutasításával néhány funkció elérhetetlen lesz. ">
     <input name="animation" type="hidden">
   </body>

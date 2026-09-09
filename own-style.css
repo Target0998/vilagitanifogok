@@ -31,3 +31,135 @@
     flex: 0 0 auto;
     width: 50%;
 }
+
+/* Közlemény nav link */
+.hm-nav-link {
+    color: #e9582f !important;
+    font-weight: bold;
+}
+
+/* Helyzetünk modal overlay */
+.hm-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.65);
+    z-index: 9999;
+    overflow-y: auto;
+    padding: 2rem 1rem;
+    align-items: flex-start;
+    justify-content: center;
+}
+.hm-overlay.hm-open {
+    display: flex;
+}
+
+.hm-dialog {
+    background: #fff;
+    border-radius: 8px;
+    max-width: 860px;
+    width: 100%;
+    position: relative;
+    margin: auto;
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.35);
+}
+
+.hm-header {
+    background-color: #fff9f7;
+    border-bottom: 3px solid #e9582f;
+    border-radius: 8px 8px 0 0;
+    padding: 1.5rem 3rem 1.5rem 2rem;
+}
+.hm-header h2 {
+    margin: 0;
+}
+
+.hm-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.8rem;
+    line-height: 1;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #555;
+    z-index: 1;
+    padding: 0 0.3rem;
+}
+.hm-close:hover {
+    color: #e9582f;
+}
+
+.hm-body {
+    padding: 1.5rem 2rem 2rem;
+}
+
+/* Two-column top: image + intro */
+.hm-top {
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start;
+    margin-bottom: 1.5rem;
+}
+.hm-img-col {
+    flex: 0 0 auto;
+    width: 260px;
+}
+.hm-img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    display: block;
+}
+.hm-intro-col {
+    flex: 1 1 0;
+    min-width: 0;
+}
+
+/* On small screens: stack image above intro */
+@media (max-width: 600px) {
+    .hm-top {
+        flex-direction: column;
+    }
+    .hm-img-col {
+        width: 100%;
+        max-height: 55vw;
+        overflow: hidden;
+    }
+    .hm-img {
+        width: 100%;
+        height: 55vw;
+        object-fit: cover;
+        object-position: center top;
+    }
+    .hm-body {
+        padding: 1rem;
+    }
+    .hm-header {
+        padding: 1.2rem 3rem 1.2rem 1rem;
+    }
+}
+
+.hm-lead {
+    color: #c0392b;
+}
+
+.hm-cta {
+    background-color: #fef3f0;
+    border: 1px solid #e9582f;
+    border-radius: 6px;
+    padding: 1rem 1.2rem;
+    margin-top: 1rem;
+}
+.hm-cta-bottom {
+    margin-top: 1.5rem;
+}
+
+.hm-full-text {
+    border-top: 1px solid #eee;
+    padding-top: 1.25rem;
+}
+.hm-full-text p {
+    margin-bottom: 0.9rem;
+}
